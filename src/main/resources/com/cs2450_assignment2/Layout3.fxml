@@ -190,11 +190,43 @@
             </VBox>
           </right>
 
-          <!-- BOTTOM: Footer -->
+         <!-- BOTTOM: Footer -->
           <bottom>
-            <VBox style="-fx-background-color:#f3f3f3;">
-              <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+            <VBox style="-fx-background-color:#3b3b3b; -fx-text-fill:white;">
+              <padding>
+	              <Insets top="16" right="16" bottom="16" left="16"/>
+              </padding>
+
               <children>
+	              <!-- Three-column footer layout -->
+	              <HBox spacing="80" alignment="TOP_CENTER">
+		              <children>
+
+			              <VBox spacing="4">
+				              <Label text="Support And Visit"
+				                     style="-fx-font-weight:bold; -fx-text-fill:white; -fx-font-size: 13px"/>
+
+				              <Label text="Support The School"
+				                     style="-fx-text-fill:white;"
+				                     underline="true"/>
+				              <Label text="Annual Fund, Gifts, and Donations" style="-fx-text-fill:white;"/>
+
+				              <Label text="Visiting"
+				                     style="-fx-text-fill:white;"
+				                     underline="true"/>
+				              <Label text="Virtual visits, tours, and more."
+				                     style="-fx-text-fill:white;"/>
+
+			              </VBox>
+			              <VBox>
+				              <Label text="Contact With Us" style="-fx-font-weight:bold; -fx-text-fill:white;"/>
+			              </VBox>
+			              <VBox AnchorPane.rightAnchor="0.0" spacing="4">
+				              <Label text="Resources" style="-fx-font-weight:bold; -fx-text-fill:white;"/>
+			              </VBox>
+
+		              </children>
+	              </HBox>
                 <Label text="Footer — contact info, links, etc."/>
               </children>
             </VBox>
