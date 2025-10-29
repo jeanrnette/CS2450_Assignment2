@@ -135,10 +135,55 @@
 
           <!-- LEFT/RIGHT placeholders (optional) -->
           <left>
-            <VBox BorderPane.alignment="CENTER">
+            <VBox
+                prefWidth="300" minWidth="300" maxWidth="300"
+                spacing="16"
+                BorderPane.alignment="TOP_CENTER">
+                <padding>
+                    <Insets top="32" right="32" bottom="32" left="32"/>
+                </padding>
+
                 <Button text="Pause Animations"/>
+
+                <VBox
+                style="-fx-background-color: white;
+               -fx-border-color: #d0d0d0;
+               -fx-border-width: 1;
+               -fx-border-radius: 8;
+               -fx-background-radius: 8;
+               -fx-padding: 12;"
+                maxWidth="Infinity">
+
+                    <Label wrapText="true" maxWidth="Infinity">
+                        <text>
+                        Content is the property of its various authors. When you contribute to
+                        this site, you agree to abide by Yale University academic and network use
+                        policy, and to act as a responsible member of our community.
+                        </text>
+                    </Label>
+                </VBox>
+
+                <VBox
+                alignment="TOP_CENTER"
+                style="-fx-background-color: white;
+               -fx-border-color: #d0d0d0;
+               -fx-border-width: 1;
+               -fx-border-radius: 8;
+               -fx-background-radius: 8;
+               -fx-padding: 12;"
+                maxWidth="Infinity">
+
+                    <Label alignment="TOP_CENTER"
+                    wrapText="true" maxWidth="Infinity">
+                        <text>
+                        Community Member
+                        </text>
+                    </Label>
+                    <Button text="Visitor: Login"/>
+                </VBox>
             </VBox>
           </left>
+
           <right>
             <VBox BorderPane.alignment="CENTER">
               <!-- Add editing tools or empty -->
