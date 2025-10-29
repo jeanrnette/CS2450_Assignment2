@@ -190,44 +190,70 @@
             </VBox>
           </right>
 
-         <!-- BOTTOM: Footer -->
-          <bottom>
-            <VBox style="-fx-background-color:#3b3b3b; -fx-text-fill:white;">
-              <padding>
-	              <Insets top="16" right="16" bottom="16" left="16"/>
-              </padding>
+         <bottom>
+            <VBox style="-fx-background-color:#3b3b3b">
 
               <children>
 	              <!-- Three-column footer layout -->
 	              <HBox spacing="80" alignment="TOP_CENTER">
+		              <padding>
+			              <Insets top="16" right="32" bottom="16" left="32"/>
+		              </padding>
+
 		              <children>
 
 			              <VBox spacing="4">
 				              <Label text="Support And Visit"
-				                     style="-fx-font-weight:bold; -fx-text-fill:white; -fx-font-size: 13px"/>
+				                     style="-fx-font-weight:bold; -fx-text-fill:white;"/>
 
-				              <Label text="Support The School"
-				                     style="-fx-text-fill:white;"
+				              <Label text="• Support The School"
+				                     style="-fx-text-fill:white; -fx-font-size: 11px"
 				                     underline="true"/>
-				              <Label text="Annual Fund, Gifts, and Donations" style="-fx-text-fill:white;"/>
+				              <Label text="Annual Fund, Gifts, and Donations."
+				                     style="-fx-text-fill:white; -fx-font-size: 10px"/>
 
-				              <Label text="Visiting"
-				                     style="-fx-text-fill:white;"
+				              <Label text="• Visiting"
+				                     style="-fx-text-fill:white; -fx-font-size: 11px"
 				                     underline="true"/>
 				              <Label text="Virtual visits, tours, and more."
-				                     style="-fx-text-fill:white;"/>
+				                     style="-fx-text-fill:white; -fx-font-size: 10px"/>
+			              </VBox>
 
+			              <VBox spacing="4">
+				              <Label text="Contact With Us"
+				                     style="-fx-font-weight:bold; -fx-text-fill:white;"/>
+
+				              <Label text="Yale School of Art"
+				                     style="-fx-text-fill:white; -fx-font-size: 10px"/>
+				              <Label text="@@yaleschoolofart"
+				                     style="-fx-text-fill:white; -fx-font-size: 10px"/>
+				              <Label text="@@yaleschoolofart1869"
+				                     style="-fx-text-fill:white; -fx-font-size: 10px"/>
 			              </VBox>
-			              <VBox>
-				              <Label text="Contact With Us" style="-fx-font-weight:bold; -fx-text-fill:white;"/>
-			              </VBox>
-			              <VBox AnchorPane.rightAnchor="0.0" spacing="4">
-				              <Label text="Resources" style="-fx-font-weight:bold; -fx-text-fill:white;"/>
+
+			              <VBox spacing="4">
+				              <Label text="Resources"
+				                     style="-fx-font-weight:bold; -fx-text-fill:white;"/>
+
+				              <Label text="• Contact"
+				                     style="-fx-text-fill:white; -fx-font-size: 11px"
+				                     underline="true"/>
+				              <Label text="• Sitemap"
+				                     style="-fx-text-fill:white; -fx-font-size: 11px"
+				                     underline="true"/>
+				              <Label text="• Accessibility at Yale"
+				                     style="-fx-text-fill:white; -fx-font-size: 11px"
+				                     underline="true"/>
 			              </VBox>
 
 		              </children>
 	              </HBox>
-                <Label text="Footer — contact info, links, etc."/>
+
+	              <HBox style="-fx-background-color:#000000;" alignment="CENTER">
+		              <Label text="© 2025 Yale School of Art"
+		                     style="-fx-text-fill: white; -fx-font-size: 11px; -fx-alignment: center;"/>
+	              </HBox>
+
               </children>
             </VBox>
           </bottom>
