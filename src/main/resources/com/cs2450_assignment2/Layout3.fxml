@@ -191,7 +191,7 @@
           </right>
 
          <bottom>
-            <VBox style="-fx-background-color:#3b3b3b">
+            <VBox style="-fx-background-color:#56473A">
 
               <children>
 	              <!-- Three-column footer layout -->
