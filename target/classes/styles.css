@@ -1,0 +1,8 @@
+.h1 {
+    -fx-text-fill: #000000;
+    -fx-font-family: "Space Grotesk";
+    -fx-font-size: 32px;
+    -fx-font-style: normal;
+    -fx-font-weight: 700;
+    -fx-line-spacing: normal;
+}
