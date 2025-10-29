@@ -11,9 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/13"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.cs2450_assignment2.Controller">
+<AnchorPane 
+prefHeight="1080" prefWidth="1920"
+xmlns="http://javafx.com/javafx/13"
+xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.cs2450_assignment2.Controller"
+stylesheets="@styles.css"
+>
 
   <children>
 
@@ -83,14 +87,21 @@
               <!-- Overview section -->
               <VBox spacing="8">
                 <children>
-                  <Label text="Overview" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
-                  <Label wrapText="true"
-                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                  <Label text="Editor Details" underline="true" style="-fx-text-fill:#0a58ca;" />
+                    <Label text="Overview" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+                    <Label wrapText="true" styleClass="p">
+                        <text>
+                        The School of Art is one of Yale’s Graduate and Professional Schools conferring MFA degrees in Graphic Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students. 
+                        </text>
+                    </Label>
+                    <Label wrapText="true">
+                        <text>
+                        Our website exists as an ongoing collaborative experiment in digital publishing and information sharing. It functions as a wiki—all members of the School of Art community—graduate students, faculty, staff, and alums—have the ability to add new content and pages, and to edit most of the site’s existing content.
+                        </text>
+                    </Label>
                 </children>
               </VBox>
 
-              <!-- Events section (simplified) -->
+              <!-- Events section -->
               <VBox spacing="8">
                 <children>
                   <Label text="Happening at SOA" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
@@ -105,16 +116,32 @@
                     </children>
                   </HBox>
 
-                  <!-- sample event item -->
-                  <HBox spacing="12" style="-fx-background-color:#f7f7f7; -fx-background-radius:8; -fx-padding:8;">
+                  
+                  <!-- Event Item 1 -->
+                  <HBox spacing="12" style="-fx-background-color:#FFFFFF; -fx-background-radius:4; -fx-padding:8;">
                     <children>
-                      <VBox spacing="2">
-                        <children>
-                          <Label text="24" style="-fx-font-weight:bold;"/>
-                          <Label text="Oct"/>
-                        </children>
-                      </VBox>
-                      <VBox spacing="4">
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="10" prefHeight="80" 
+                        minWidth="10" minHeight="80"
+                        style="-fx-background-color:#B94419;" />
+
+                        <!-- VBox: Date -->
+                         <VBox spacing="2">
+                            <children>
+                                <Label text="24" style="-fx-font-weight:bold;"/>
+                                <Label text="Oct"/>
+                            </children>
+                        </VBox>
+
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="80" prefHeight="80" 
+                        minWidth="80" minHeight="80"
+                        style="-fx-background-color:#B94419;" />
+
+                        <!-- VBox: Events -->
+                        <VBox spacing="4">
                         <children>
                           <Label text="Event Title" style="-fx-font-weight:bold;"/>
                           <Label text="Event description. Lorem ipsum dolor sit amet."/>
@@ -128,12 +155,96 @@
                       </VBox>
                     </children>
                   </HBox>
+                <!-- Event Item 1 : END-->
+
+                <!-- Event Item 1 -->
+                  <HBox spacing="12" style="-fx-background-color:#FFFFFF; -fx-background-radius:4; -fx-padding:8;">
+                    <children>
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="10" prefHeight="80" 
+                        minWidth="10" minHeight="80"
+                        style="-fx-background-color:#E5B141;" />
+
+                        <!-- VBox: Date -->
+                         <VBox spacing="2">
+                            <children>
+                                <Label text="24" style="-fx-font-weight:bold;"/>
+                                <Label text="Oct"/>
+                            </children>
+                        </VBox>
+
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="80" prefHeight="80" 
+                        minWidth="80" minHeight="80"
+                        style="-fx-background-color:#E5B141;" />
+
+                        <!-- VBox: Events -->
+                        <VBox spacing="4">
+                        <children>
+                          <Label text="Event Title" style="-fx-font-weight:bold;"/>
+                          <Label text="Event description. Lorem ipsum dolor sit amet."/>
+                          <HBox spacing="16">
+                            <children>
+                              <Label text="123 Some Street"/>
+                              <Label text="2:00 PM - 3:00 PM"/>
+                            </children>
+                          </HBox>
+                        </children>
+                      </VBox>
+                    </children>
+                  </HBox>
+                <!-- Event Item 1 : END-->
+
+                <!-- Event Item 1 -->
+                  <HBox spacing="12" style="-fx-background-color:#FFFFFF; -fx-background-radius:4; -fx-padding:8;">
+                    <children>
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="10" prefHeight="80" 
+                        minWidth="10" minHeight="80"
+                        style="-fx-background-color:#199B74;" />
+
+                        <!-- VBox: Date -->
+                         <VBox spacing="2">
+                            <children>
+                                <Label text="24" style="-fx-font-weight:bold;"/>
+                                <Label text="Oct"/>
+                            </children>
+                        </VBox>
+
+                        <!-- Event Image Placeholder -->
+                        <Region 
+                        prefWidth="80" prefHeight="80" 
+                        minWidth="80" minHeight="80"
+                        style="-fx-background-color:#199B74;" />
+
+                        <!-- VBox: Events -->
+                        <VBox spacing="4">
+                        <children>
+                          <Label text="Event Title" style="-fx-font-weight:bold;"/>
+                          <Label text="Event description. Lorem ipsum dolor sit amet."/>
+                          <HBox spacing="16">
+                            <children>
+                              <Label text="123 Some Street"/>
+                              <Label text="2:00 PM - 3:00 PM"/>
+                            </children>
+                          </HBox>
+                        </children>
+                      </VBox>
+                    </children>
+                  </HBox>
+                <!-- Event Item 1 : END-->
+
+
+
                 </children>
               </VBox>
             </VBox>
           </center>
 
-          <!-- LEFT/RIGHT placeholders (optional) -->
+          <!-- LEFT Sidebar-->
           <left>
             <VBox
                 prefWidth="300" minWidth="300" maxWidth="300"
@@ -184,23 +295,88 @@
             </VBox>
           </left>
 
-          <right>
-            <VBox BorderPane.alignment="CENTER">
-              <!-- Add editing tools or empty -->
-            </VBox>
-          </right>
+		<!-- RIGHT Sidebar-->
+        <right>
+        <VBox spacing="12" BorderPane.alignment="TOP_CENTER"
+                prefWidth="280" minWidth="240" maxWidth="360"
+                style="-fx-background-color:transparent;">
+            <padding>
+            <Insets top="24" right="24" bottom="24" left="0"/>
+            </padding>
 
-         <bottom>
+            <!-- Card: Quick Links -->
+            <VBox spacing="10"
+                style="-fx-background-color: white;
+                        -fx-background-radius: 10;
+                        -fx-border-color: #dcdcdc;
+                        -fx-border-radius: 10;
+                        -fx-padding: 14;">
+            <Label text="Quick Links"
+                    style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+            <VBox spacing="6">
+                <Label text="Admissions"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="Academic Calendar"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="Faculty Directory"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="Student Resources"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="News and Events"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+            </VBox>
+            </VBox>
+
+            <!-- Card: Tools -->
+            <VBox spacing="10"
+                style="-fx-background-color: white;
+                        -fx-background-radius: 10;
+                        -fx-border-color: #dcdcdc;
+                        -fx-border-radius: 10;
+                        -fx-padding: 14;">
+            <Label text="Tools"
+                    style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+
+            <VBox spacing="6">
+                <Label text="Canvas / LMS"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="Library"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+                <Label text="IT Help Desk"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+            </VBox>
+            </VBox>
+
+            <!-- Card: Contact -->
+            <VBox spacing="8"
+                style="-fx-background-color: white;
+                        -fx-background-radius: 10;
+                        -fx-border-color: #dcdcdc;
+                        -fx-border-radius: 10;
+                        -fx-padding: 14;">
+            <Label text="Contact"
+                    style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+            <Label text="Email: art@yale.edu"
+                    style="-fx-text-fill:#0a58ca; -fx-underline:true;"/>
+            <Label text="Phone: (203) 432-2600"/>
+            <Button text="Visit Website"/>
+            </VBox>
+        </VBox>
+        </right>
+
+          <!-- BOTTOM: Footer -->
+        <bottom>
             <VBox style="-fx-background-color:#56473A">
 
-              <children>
-	              <!-- Three-column footer layout -->
-	              <HBox spacing="80" alignment="TOP_CENTER">
-		              <padding>
-			              <Insets top="16" right="32" bottom="16" left="32"/>
-		              </padding>
+            <children>
+	            <!-- Three-column footer layout -->
+	            <HBox spacing="80" alignment="TOP_CENTER">
+		            <padding>
+			            <Insets top="16" right="32" bottom="16" left="32"/>
+		            </padding>
 
-		              <children>
+		            <children>
 
 			              <VBox spacing="4">
 				              <Label text="Support And Visit"
