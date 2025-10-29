@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/13"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.cs2450_assignment2.Controller">
+
+  <children>
+
+    <!-- Fixed header (two rows) -->
+    <VBox fx:id="header"
+          AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0"
+          AnchorPane.topAnchor="0.0">
+
+      <!-- Row 1: School name -->
+      <HBox style="-fx-background-color:#2E8B57;" alignment="CENTER_LEFT" spacing="10">
+        <children>
+          <Label text="Yale School of Art"
+                 style="-fx-text-fill:white; -fx-font-size:18px; -fx-font-weight:bold;"/>
+          <Region HBox.hgrow="ALWAYS"/>
+          <!-- optional address or tagline on the right -->
+          <!-- <Label text="New Haven, CT" style="-fx-text-fill:white;"/> -->
+        </children>
+        <padding><Insets left="16" right="16" top="8" bottom="8"/></padding>
+      </HBox>
+
+      <!-- Row 2: Navbar -->
+      <HBox style="-fx-background-color:#2E8B57;" alignment="CENTER_LEFT" spacing="12">
+        <padding><Insets left="16" right="16" top="8" bottom="8"/></padding>
+        <children>
+          <Button text="Home"           onAction="#handleHomeButton"/>
+          <Button text="About"          onAction="#handleAboutButton"/>
+          <Button text="Exhibition"     onAction="#handleExhibitionsButton"/>
+          <Button text="Publications"   onAction="#handlePublicationsButton"/>
+          <Button text="News"           onAction="#handleNewsButton"/>
+          <Button text="Public Events"  onAction="#handlePublicEventsButton"/>
+          <Region HBox.hgrow="ALWAYS"/>
+          <Button text="Apply"          onAction="#handleApplyButton"/>
+        </children>
+      </HBox>
+    </VBox>
+
+    <!-- Scrollable page content lives below header -->
+    <ScrollPane fx:id="scroll"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                AnchorPane.bottomAnchor="0.0"
+                fitToWidth="true"
+                hbarPolicy="NEVER"
+                vbarPolicy="AS_NEEDED">
+
+      <content>
+        <!-- Use BorderPane for banner (top), main 3-column area (center), footer (bottom) -->
+        <BorderPane>
+
+          <!-- TOP: Banner (replace with ImageView if you have an image) -->
+          <top>
+            <StackPane style="-fx-background-color:#e8eef3;">
+              <padding><Insets top="24" right="16" bottom="24" left="16"/></padding>
+              <children>
+                <Label text="School Banner Area"
+                       style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+              </children>
+            </StackPane>
+          </top>
+
+          <!-- CENTER: Main content (single column here; you can drop an HBox for 3 columns later) -->
+          <center>
+            <VBox spacing="16" BorderPane.alignment="CENTER">
+              <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+
+              <!-- Overview section -->
+              <VBox spacing="8">
+                <children>
+                  <Label text="Overview" style="-fx-font-size:18px; -fx-font-weight:bold;"/>
+                  <Label wrapText="true"
+                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                  <Label text="Editor Details" underline="true" style="-fx-text-fill:#0a58ca;" />
+                </children>
+              </VBox>
+
+              <!-- Events section (simplified) -->
+              <VBox spacing="8">
+                <children>
+                  <Label text="Happening at SOA" style="-fx-font-size:16px; -fx-font-weight:bold;"/>
+                  <Label wrapText="true"
+                         text="Short description of current events. Replace with dynamic content later."/>
+                  <HBox spacing="12">
+                    <children>
+                      <Button text="Prev"/>
+                      <Button text="Next"/>
+                      <Region HBox.hgrow="ALWAYS"/>
+                      <Button text="Subscribe"/>
+                    </children>
+                  </HBox>
+
+                  <!-- sample event item -->
+                  <HBox spacing="12" style="-fx-background-color:#f7f7f7; -fx-background-radius:8; -fx-padding:8;">
+                    <children>
+                      <VBox spacing="2">
+                        <children>
+                          <Label text="24" style="-fx-font-weight:bold;"/>
+                          <Label text="Oct"/>
+                        </children>
+                      </VBox>
+                      <VBox spacing="4">
+                        <children>
+                          <Label text="Event Title" style="-fx-font-weight:bold;"/>
+                          <Label text="Event description. Lorem ipsum dolor sit amet."/>
+                          <HBox spacing="16">
+                            <children>
+                              <Label text="123 Some Street"/>
+                              <Label text="2:00 PM - 3:00 PM"/>
+                            </children>
+                          </HBox>
+                        </children>
+                      </VBox>
+                    </children>
+                  </HBox>
+                </children>
+              </VBox>
+            </VBox>
+          </center>
+
+          <!-- LEFT/RIGHT placeholders (optional) -->
+          <left>
+            <VBox BorderPane.alignment="CENTER">
+                <Button text="Pause Animations"/>
+            </VBox>
+          </left>
+          <right>
+            <VBox BorderPane.alignment="CENTER">
+              <!-- Add editing tools or empty -->
+            </VBox>
+          </right>
+
+          <!-- BOTTOM: Footer -->
+          <bottom>
+            <VBox style="-fx-background-color:#f3f3f3;">
+              <padding><Insets top="16" right="16" bottom="16" left="16"/></padding>
+              <children>
+                <Label text="Footer — contact info, links, etc."/>
+              </children>
+            </VBox>
+          </bottom>
+
+        </BorderPane>
+      </content>
+    </ScrollPane>
+
+  </children>
+</AnchorPane>
